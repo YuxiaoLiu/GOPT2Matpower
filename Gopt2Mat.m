@@ -74,8 +74,7 @@ end
 % resistance, reactance, and line charging susceptance
 branch(:, BR_R) = cell2mat(branch_raw(:, 8));
 branch(:, BR_X) = cell2mat(branch_raw(:, 7));
-w = 50 * 2 * pi;
-branch(:, BR_B) = cell2mat(branch_raw(:, 9)) * 2 * w;
+branch(:, BR_B) = cell2mat(branch_raw(:, 9)) * 2;
 % the rate A B C
 branch(:, RATE_A) = cell2mat(branch_raw(:, 10));
 branch(:, RATE_B) = cell2mat(branch_raw(:, 11));
